@@ -1,6 +1,6 @@
 # Shutdown Timer
 
-This simple Windows batch script allows you to set a shutdown timer or cancel a scheduled shutdown. 
+This simple script allows you to set a shutdown timer or cancel a scheduled shutdown on Windows and Linux.
 
 ## Usage
 
@@ -15,12 +15,37 @@ This simple Windows batch script allows you to set a shutdown timer or cancel a 
 
 ## Instructions
 
-- Ensure you are running the script with administrative privileges.
-- The script uses the `shutdown` command to set or cancel shutdown. 
+### Windows
+
+- Run the script with administrative privileges.
+- The script uses the `shutdown` command to set or cancel shutdown.
+- Invalid inputs are handled, and the user is prompted to select a valid option.
+
+### Linux
+
+- Run the script.
+- The script uses the `shutdown` command to set or cancel shutdown.
 - Invalid inputs are handled, and the user is prompted to select a valid option.
 
 ## Usage Example
 
-```bash
-$ ./shutdown_script.bat
+### Windows
+
+```powershell
+.\shutdown_script.bat
 ```
+
+### Linux
+
+```bash
+./shutdown_script.sh
+```
+
+## Contributing
+
+If you find any issues or have suggestions for improvements, feel free to open an issue or create a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
